@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Montagnes de Cilaos en RA</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a-scene embedded arjs>
+        <!-- Placeholder for Mountain Labels -->
+        <a-entity id="mountain-labels"></a-entity>
+
+        <!-- Camera Entity -->
+        <a-entity camera gps-camera rotation-reader></a-entity>
+    </a-scene>
+
+    <script src="script.js"></script>
+</body>
+</html>
