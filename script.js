@@ -10,9 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     mountains.forEach(mountain => {
         const label = document.createElement('a-text');
-        label.setAttribute('gps-entity-place', `latitude: ${mountain.latitude}; longitude: ${mountain.longitude};`);
+        label.setAttribute('gps-projected-entity-place', `latitude: ${mountain.latitude}; longitude: ${mountain.longitude};`);
         label.setAttribute('value', `${mountain.name} (${mountain.altitude}m)`);
         label.setAttribute('position', '0 2 0');
         mountainLabels.appendChild(label);
+
+        console.log(`Added label for ${mountain.name} at (${mountain.latitude}, ${mountain.longitude})`);
     });
 });
