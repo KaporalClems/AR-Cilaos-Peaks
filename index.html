@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a-scene embedded arjs>
+    <a-scene embedded arjs="debugUIEnabled: true;">
         <!-- Placeholder for Mountain Labels -->
         <a-entity id="mountain-labels">
             <!-- Piton des Neiges -->
-            <a-text gps-entity-place="latitude: -21.099; longitude: 55.479;" value="Piton des Neiges (3070m)" position="0 2 0"></a-text>
+            <a-text gps-projected-entity-place="latitude: -21.099; longitude: 55.479;" value="Piton des Neiges (3070m)" position="0 2 0"></a-text>
             <!-- Grand Bénare -->
-            <a-text gps-entity-place="latitude: -21.115049140305235; longitude: 55.423090308826986;" value="Grand Bénare (2898m)" position="0 2 0"></a-text>
+            <a-text gps-projected-entity-place="latitude: -21.115049140305235; longitude: 55.423090308826986;" value="Grand Bénare (2898m)" position="0 2 0"></a-text>
         </a-entity>
 
         <!-- Camera Entity -->
